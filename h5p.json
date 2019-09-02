@@ -1,0 +1,56 @@
+{
+  "title": "H5P Random Wheel",
+  "language": "en",
+  "mainLibrary": "H5P.Randomwheel",
+  "embedTypes": [
+    "iframe"
+  ],
+  "authors": [
+    {
+      "name": "Pimenko",
+      "role": "Author"
+    }
+  ],
+  "source": "https://pimenko.com",
+  "license": "GNU GPL",
+  "licenseVersion": "3.0",
+  "preloadedDependencies": [
+    {
+      "machineName": "H5P.Randomwheel",
+      "majorVersion": "1",
+      "minorVersion": "4"
+    }
+  ],
+  "dynamicDependencies": [
+    {
+      "machineName": "H5P.JoubelUI",
+      "majorVersion": "1",
+      "minorVersion": "3"
+    },
+    {
+      "machineName": "FontAwesome",
+      "majorVersion": "4",
+      "minorVersion": "5"
+    },
+    {
+      "machineName": "H5P.Transition",
+      "majorVersion": "1",
+      "minorVersion": "0"
+    },
+    {
+      "machineName": "Drop",
+      "majorVersion": "1",
+      "minorVersion": "0"
+    },
+    {
+      "machineName": "H5P.FontIcons",
+      "majorVersion": "1",
+      "minorVersion": "0"
+    },
+    {
+      "machineName": "Tether",
+      "majorVersion": "1",
+      "minorVersion": "0"
+    }
+  ]
+}
