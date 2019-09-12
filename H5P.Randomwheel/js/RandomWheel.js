@@ -84,7 +84,7 @@ H5P.Randomwheel = (function($, JoubelUI) {
         //var center = 150;
         var center = $('#' + that.canvasId).width() / 2;
         ctx.strokeStyle = 'black';  // Set line colour.
-        ctx.fillStyle = 'white';  // Set fill colour.
+        ctx.fillStyle = 'white';    // Set fill colour.
         ctx.lineWidth = 2;
         ctx.beginPath();           // Begin path.
         ctx.moveTo(center - size, 0);        // Move to initial position.
@@ -138,9 +138,6 @@ H5P.Randomwheel = (function($, JoubelUI) {
         });
 
         for (var index = 0; index < that.slices; index++) {
-            console.log(this.options);
-            console.log(index);
-            console.log(that.slices);
             that.theWheel.addSegment({'fillStyle': this.options.words[index].wordcolor, 'text': this.options.words[index]});
         }
         that.theWheel.draw();
@@ -151,7 +148,7 @@ H5P.Randomwheel = (function($, JoubelUI) {
      * Resize function for responsiveness.
      */
     Randomwheel.prototype.resizeCanvas = function(id) {
-        var canvasWidth = $('.h5p-Randomwheel').width() / 2;
+        var canvasWidth = $('.h5p-Randomwheel').width();
         var canvasHeight = canvasWidth / 16 * 8;
         var c = $("#" + id);
         ctx = c[0].getContext('2d');
